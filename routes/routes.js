@@ -52,7 +52,7 @@ router.route('/expense').get(getExpense)
                                 .delete(deleteExpense)
                                 .patch(modifyExpense)
 
-router.get('/jwt-check', jwtCheck, currUser);
+router.get('/jwtCheck', jwtCheck, currUser);
 
 router.get('/dashboard', jwtCheck, getDashboard);
 
