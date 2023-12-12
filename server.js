@@ -17,11 +17,7 @@ mongoose
 
 
 app.use(
-  cors({
-    origin: ["http://localhost:4200"],
-    methods: ["GET", "POST", "PATCH", "DELETE"],
-    credentials: true,
-  })
+  cors()
 );
 
 app.use(express.json());
