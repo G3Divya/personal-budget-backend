@@ -16,9 +16,7 @@ mongoose
   .catch((err) => console.error(err));
 
 
-app.use(
-  cors()
-);
+app.use(cors());
 
 app.use(express.json());
 app.use(cookieParser());
