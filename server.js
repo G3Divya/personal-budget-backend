@@ -18,7 +18,7 @@ mongoose
 
   app.use(
     cors({
-      origin: ["https://lionfish-app-swy7g.ondigitalocean.app/", "http://localhost:4200"],
+      origin: ["*", "https://lionfish-app-swy7g.ondigitalocean.app/", "http://localhost:4200"],
       methods: ["GET", "POST", "PATCH", "DELETE"],
       credentials: true,
     })
